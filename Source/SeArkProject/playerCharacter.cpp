@@ -7,6 +7,9 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 
+#include "Animation/AnimMontage.h"
+
+
 // Sets default values
 AplayerCharacter::AplayerCharacter()
 {
@@ -41,6 +44,8 @@ AplayerCharacter::AplayerCharacter()
 void AplayerCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+	FVector StartLocation(500.0f, 0.0f, 100.0f);
+	SetActorLocation(StartLocation);
 	
 }
 
@@ -57,4 +62,3 @@ void AplayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 }
-
