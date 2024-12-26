@@ -7,7 +7,6 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 
-#include "Animation/AnimMontage.h"
 
 
 // Sets default values

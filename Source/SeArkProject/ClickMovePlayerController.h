@@ -23,6 +23,11 @@ protected:
 
 	void InputRightMouseButtonReleased();
 
+	TArray<FName> SkillKeys;
+
+	void OnSkillPressed(int32 SkillID);
+	void OnSkillReleased(int32 SkillID);
+
 
 	void SetNewDestination(const FVector Destination);
 
@@ -31,6 +36,8 @@ protected:
 	virtual void SetupInputComponent() override;
 
 	virtual void PlayerTick(float DeltaTime) override;
+private:
+	bool btSkill[9];
 
 
 };
