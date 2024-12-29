@@ -13,7 +13,6 @@ AClickMovePlayerController::AClickMovePlayerController()
 void AClickMovePlayerController::InputRightMouseButtonPressed()
 {
 	bClickRightMouse = true;
-	pressKeyboardButton = true;
 
 }
 

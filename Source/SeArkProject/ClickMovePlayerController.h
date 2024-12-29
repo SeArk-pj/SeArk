@@ -16,10 +16,11 @@ class SEARKPROJECT_API AClickMovePlayerController : public APlayerController
 
 public:
 	AClickMovePlayerController(); //������
+	UPROPERTY(BlueprintReadWrite, Category = "Player")
+	bool pressKeyboardButton = true;
+
 protected:
 	bool bClickRightMouse;
-
-	bool pressKeyboardButton = true;
 
 	void InputRightMouseButtonPressed();
 
